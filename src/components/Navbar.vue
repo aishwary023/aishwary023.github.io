@@ -1,0 +1,101 @@
+<template>
+  <nav class="container navbar fixed-top navbar-expand-lg">
+    <a class="navbar-brand" href="#">AS</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      @click="toggle()"
+      style="outline:none;"
+    >
+      <i class="material-icons" id="hamburger">{{ icon }}</i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact Me</a>
+        </li>
+        <li class="nav-item">
+          <label class="nav-link btn btn-outline-dark" href="#">Resume</label>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</template>
+
+<script>
+export default {
+  data: () => {
+    return {
+      icon: 'menu'
+    };
+  },
+  methods: {
+    toggle() {
+      console.log('Hello');
+      this.icon = this.icon === 'menu' ? 'close' : 'menu';
+    }
+  }
+};
+</script>
+
+<style>
+a {
+  color: #ffffff;
+}
+.nav-link {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+}
+.nav-item {
+  margin: 10px;
+}
+a:hover {
+  color: #9b005f;
+}
+.active > a {
+  border-top: 2px ridge #ffffff;
+}
+#hamburger {
+  color: #ffffff;
+}
+label {
+  color: #ffffff !important;
+  background-color: #343a40 !important;
+}
+@media (max-width: 768px) {
+  nav {
+    padding-top: 0;
+    padding-bottom: 5px;
+    border-radius: 0;
+    background-color: #ffffff;
+    border-color: #ffffff;
+  }
+
+  #hamburger,
+  a {
+    color: #000000;
+  }
+  label {
+    background-color: transparent !important;
+    color: #000000 !important;
+  }
+}
+</style>
