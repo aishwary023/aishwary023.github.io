@@ -2,27 +2,27 @@
   <div id="home">
     <Navbar />
     <div id="landing-intro">
-      Hi,
-      <br />
-      I'm Aishwary
-      <br />
-      <div id="about">Student | Developer | Tech Enthusiast</div>
+      <glitch text="Hi,"></glitch>
+      <glitch text="I'm Aishwary"></glitch>
+
+      <div id="about">
+        <glitch text="Student | Developer | Tech Enthusiast"></glitch>
+      </div>
     </div>
     <ParticlesJS />
     <br />
-    <div class="text-center">
-      <h3>About me!</h3>
-    </div>
   </div>
 </template>
 
 <script>
 import Navbar from './Navbar.vue';
 import ParticlesJS from './ParticlesJS.vue';
+import Glitch from 'vue-glitch';
 export default {
   components: {
     Navbar,
-    ParticlesJS
+    ParticlesJS,
+    Glitch
   }
 };
 </script>
@@ -62,6 +62,9 @@ export default {
     font-weight: 100;
     opacity: 0.75;
     width: 350px !important;
+  }
+  .glitch {
+    background: transparent;
   }
 }
 </style>
