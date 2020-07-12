@@ -63,8 +63,8 @@ export default {
     opacity: 0.75;
     width: 350px !important;
   }
-  .glitch {
-    background: transparent;
-  }
+}
+.glitch-wrapper > .glitch {
+  background: transparent !important;
 }
 </style>

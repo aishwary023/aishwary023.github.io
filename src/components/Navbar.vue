@@ -1,6 +1,14 @@
 <template>
-  <nav class="container navbar fixed-top navbar-expand-lg">
-    <a class="navbar-brand" href="#">AS</a>
+  <nav
+    :class="{ change_color: scrollPosition > 50 }"
+    class=" navbar fixed-top navbar-expand-lg "
+  >
+    <a
+      :class="{ change_text_color: scrollPosition > 50 }"
+      class="navbar-brand"
+      href="#"
+      >AS</a
+    >
     <button
       class="navbar-toggler"
       type="button"
@@ -18,16 +26,28 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
+          <a
+            :class="{ change_text_color: scrollPosition > 50 }"
+            class="nav-link"
+            href="#"
+            >Home</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About Me</a>
+          <a
+            :class="{ change_text_color: scrollPosition > 50 }"
+            class="nav-link"
+            href="#"
+            >About Me</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact Me</a>
+          <a
+            :class="{ change_text_color: scrollPosition > 50 }"
+            class="nav-link"
+            href="#"
+            >Projects</a
+          >
         </li>
         <li class="nav-item">
           <label class="nav-link btn btn-outline-dark" href="#">Resume</label>
@@ -41,14 +61,20 @@
 export default {
   data: () => {
     return {
-      icon: 'menu'
+      icon: 'menu',
+      scrollPosition: null
     };
   },
   methods: {
     toggle() {
-      console.log('Hello');
       this.icon = this.icon === 'menu' ? 'close' : 'menu';
+    },
+    updateScroll() {
+      this.scrollPosition = window.scrollY;
     }
+  },
+  mounted() {
+    window.addEventListener('scroll', this.updateScroll);
   }
 };
 </script>
@@ -70,15 +96,19 @@ a {
 a:hover {
   color: #9b005f;
 }
-.active > a {
-  border-top: 2px ridge #ffffff;
-}
+
 #hamburger {
   color: #ffffff;
 }
 label {
   color: #ffffff !important;
   background-color: #343a40 !important;
+}
+
+@media (min-width: 768px) {
+  .active > a {
+    border-top: 2px solid #ff0000;
+  }
 }
 @media (max-width: 768px) {
   nav {
@@ -96,6 +126,20 @@ label {
   label {
     background-color: transparent !important;
     color: #000000 !important;
+  }
+  .active > a {
+    border-left: 4px solid #ff0000;
+  }
+}
+@media (min-width: 768px) {
+  .change_color {
+    transition: all 0.5s;
+    background-color: white;
+    color: #000000;
+    border-bottom: 1px solid #e7eaec;
+  }
+  .change_text_color {
+    color: #000000;
   }
 }
 </style>

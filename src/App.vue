@@ -3,7 +3,6 @@
     <Home />
     <AboutMe />
     <Projects />
-    <ContactMe />
   </div>
 </template>
 
@@ -11,13 +10,12 @@
 import Home from './components/Home.vue';
 import AboutMe from './components/AboutMe.vue';
 import Projects from './components/Projects';
-import ContactMe from './components/ContactMe';
+
 export default {
   name: 'App',
   components: {
     Home,
     AboutMe,
-    ContactMe,
     Projects
   }
 };
