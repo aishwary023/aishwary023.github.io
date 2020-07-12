@@ -5,7 +5,7 @@
       <glitch text="Hi,"></glitch>
       <glitch text="I'm Aishwary"></glitch>
 
-      <div id="aboutme">
+      <div id="sub-intro">
         <glitch text="Student | Developer | Tech Enthusiast"></glitch>
       </div>
     </div>
@@ -39,7 +39,7 @@ export default {
   font-family: 'Source Code Pro', monospace;
   text-transform: uppercase;
 }
-#aboutme {
+#sub-intro {
   font-size: 20px;
   font-weight: 100;
   opacity: 0.75;
@@ -57,7 +57,7 @@ export default {
     font-family: 'Source Code Pro', monospace;
     text-transform: uppercase;
   }
-  #aboutme {
+  #sub-intro {
     font-size: 15px;
     font-weight: 100;
     opacity: 0.75;
