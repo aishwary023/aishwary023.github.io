@@ -11,7 +11,8 @@
     "core-js": "^3.6.5",
     "particles.js": "^2.0.0",
     "vue": "^2.6.11",
-    "vue-glitch": "^1.0.1"
+    "vue-glitch": "^1.0.1",
+    "vue-scrollto": "^2.18.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.4.0",

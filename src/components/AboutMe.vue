@@ -1,8 +1,8 @@
 <template>
-  <div class="container">
+  <div class="container" id="about">
     <span>
       <h3>
-        About me!
+        About me
       </h3>
     </span>
     <hr />
@@ -22,13 +22,24 @@
       <p align="center">
         💬 student, self-taught coder<br />
         🌱 learning Django. REST. VueJS. Steganography. Cryptography<br />
+        🔭 intrested in web-development, info-sec, anything tech <br />
         🖥 develops webapps. back-end works.<br />
         🧩 likes painting. cycling. dancing. and obviously coding<br />
       </p>
       <p><br /></p>
       <p align="center">
         <a
+          class="contact-icon"
           href="https://www.linkedin.com/in/aishwary-saxena/"
+          target="_blank"
+          title="GitHub"
+          ><img
+            height="28"
+            src="https://raw.githubusercontent.com/feathericons/feather/master/icons/github.svg"
+        /></a>
+        <a
+          class="contact-icon"
+          href="https://www.github.com/in/aishwary023/"
           target="_blank"
           title="LinkedIn"
           ><img
@@ -36,6 +47,7 @@
             src="https://raw.githubusercontent.com/feathericons/feather/master/icons/linkedin.svg"
         /></a>
         <a
+          class="contact-icon"
           href="mailto:aishwary.saxena.min19@itbhu.ac.in"
           target="_blank"
           title="Gmail"
@@ -43,12 +55,17 @@
             height="28"
             src="https://raw.githubusercontent.com/feathericons/feather/master/icons/mail.svg"
         /></a>
-        <a href="https://wa.me/918299329212" target="_blank" title="Whatsapp"
+        <a
+          class="contact-icon"
+          href="https://wa.me/918299329212"
+          target="_blank"
+          title="Whatsapp"
           ><img
             height="28"
             src="https://raw.githubusercontent.com/feathericons/feather/master/icons/message-circle.svg"
         /></a>
         <a
+          class="contact-icon"
           href="https://www.instagram.com/ai.shwary/"
           target="_blank"
           title="Instagram"
@@ -65,4 +82,14 @@
 export default {};
 </script>
 
-<style></style>
+<style>
+.contact-icon {
+  padding: 0px 8px;
+}
+#about {
+  margin: 50px auto 150px auto;
+}
+body {
+  color: #000000;
+}
+</style>

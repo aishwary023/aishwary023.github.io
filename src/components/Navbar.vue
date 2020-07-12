@@ -30,6 +30,13 @@
             :class="{ change_text_color: scrollPosition > 50 }"
             class="nav-link"
             href="#"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            @click="toggle()"
+            v-scroll-to="{
+              el: '#home',
+              offset: -115
+            }"
             >Home</a
           >
         </li>
@@ -38,6 +45,13 @@
             :class="{ change_text_color: scrollPosition > 50 }"
             class="nav-link"
             href="#"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            @click="toggle()"
+            v-scroll-to="{
+              el: '#about',
+              offset: -115
+            }"
             >About Me</a
           >
         </li>
@@ -46,6 +60,13 @@
             :class="{ change_text_color: scrollPosition > 50 }"
             class="nav-link"
             href="#"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            @click="toggle()"
+            v-scroll-to="{
+              el: '#projects',
+              offset: -115
+            }"
             >Projects</a
           >
         </li>
@@ -79,7 +100,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 a {
   color: #ffffff;
 }
