@@ -4,7 +4,6 @@
     <div id="landing-intro">
       <glitch text="Hi,"></glitch>
       <glitch text="I'm Aishwary"></glitch>
-
       <div id="sub-intro">
         <glitch text="Student | Developer | Tech Enthusiast"></glitch>
       </div>
