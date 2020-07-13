@@ -25,7 +25,11 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
+        <li
+          class="nav-item"
+          :class="{ active: isActive('home') }"
+          @click="setActive('home')"
+        >
           <a
             :class="{ change_text_color: scrollPosition > 50 }"
             class="nav-link"
@@ -41,7 +45,11 @@
             >Home</a
           >
         </li>
-        <li class="nav-item">
+        <li
+          class="nav-item"
+          :class="{ active: isActive('about') }"
+          @click="setActive('about')"
+        >
           <a
             :class="{ change_text_color: scrollPosition > 50 }"
             class="nav-link"
@@ -57,7 +65,11 @@
             >About Me</a
           >
         </li>
-        <li class="nav-item">
+        <li
+          class="nav-item"
+          :class="{ active: isActive('projects') }"
+          @click="setActive('projects')"
+        >
           <a
             :class="{ change_text_color: scrollPosition > 50 }"
             class="nav-link"
@@ -86,7 +98,8 @@ export default {
   data: () => {
     return {
       icon: 'menu',
-      scrollPosition: null
+      scrollPosition: null,
+      activeItem: 'home'
     };
   },
   methods: {
@@ -95,6 +108,12 @@ export default {
     },
     updateScroll() {
       this.scrollPosition = window.scrollY;
+    },
+    isActive: function(menuItem) {
+      return this.activeItem === menuItem;
+    },
+    setActive: function(menuItem) {
+      this.activeItem = menuItem; // no need for Vue.set()
     }
   },
   mounted() {

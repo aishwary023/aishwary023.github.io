@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "jquery": "^3.5.1",
     "particles.js": "^2.0.0",
     "vue": "^2.6.11",
     "vue-glitch": "^1.0.1",

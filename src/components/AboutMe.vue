@@ -30,7 +30,7 @@
       <p align="center">
         <a
           class="contact-icon"
-          href="https://www.linkedin.com/in/aishwary-saxena/"
+          href="https://www.github.com/aishwary023/"
           target="_blank"
           title="GitHub"
           ><img
@@ -39,7 +39,7 @@
         /></a>
         <a
           class="contact-icon"
-          href="https://www.github.com/in/aishwary023/"
+          href="https://www.linkedin.com/in/aishwary-saxena/"
           target="_blank"
           title="LinkedIn"
           ><img
