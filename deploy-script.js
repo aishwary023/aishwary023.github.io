@@ -14,6 +14,7 @@ const fs = require('fs');
     await execa('git', ['push', 'origin', 'master', '--force']);
     await execa('rm', ['-r', folderName]);
     await execa('git', ['checkout', '-f', 'develop']);
+    await execa('git', ['branch', '-D', 'master']);
     console.log('Successfully deployed');
   } catch (e) {
     console.log(e.message);
