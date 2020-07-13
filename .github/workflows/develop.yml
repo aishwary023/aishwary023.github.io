@@ -5,7 +5,7 @@ on:
       - develop
 jobs:
   deploy:
-    name: Deploying to gh-pages
+    name: Deploying to master
     runs-on: ubuntu-latest
     steps:
       - name: Setup Node.js for use with actions
@@ -21,4 +21,4 @@ jobs:
       - name: Run deploy script
         run: |
           git config user.name "aishwary023" && git config user.email "aishwary.saxena.min19@itbhu.ac.in"
-          npm run gh-pages-deploy
+          npm run deploy
