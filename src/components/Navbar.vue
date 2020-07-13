@@ -70,7 +70,12 @@
           >
         </li>
         <li class="nav-item">
-          <label class="nav-link btn btn-outline-dark" href="#">Resume</label>
+          <a
+            class="nav-link btn btn-outline-dark"
+            href="https://drive.google.com/file/d/1i-IjETYsAf6Ex6STP1jxfB4Ft2QVYZPW/view?usp=sharing"
+            target="_blank"
+            >Resume</a
+          >
         </li>
       </ul>
     </div>
