@@ -71,6 +71,7 @@
         </li>
         <li class="nav-item">
           <a
+            id="resume"
             class="nav-link btn btn-outline-dark"
             href="https://drive.google.com/file/d/1i-IjETYsAf6Ex6STP1jxfB4Ft2QVYZPW/view?usp=sharing"
             target="_blank"
@@ -135,7 +136,7 @@ a:hover {
 #hamburger {
   color: #ffffff;
 }
-label {
+#resume {
   color: #ffffff !important;
   background-color: #343a40 !important;
 }
@@ -159,7 +160,7 @@ label {
   a {
     color: #000000;
   }
-  label {
+  #resume {
     background-color: transparent !important;
     color: #000000 !important;
   }
