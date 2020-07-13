@@ -34,7 +34,7 @@
                 :href="card.repoLink"
                 target="_blank"
                 title="Repository"
-                style="margin:auto 15px auto 15px"
+                style="margin:10px 15px 10px 15px"
                 ><img
                   height="40"
                   src="https://image.flaticon.com/icons/svg/2111/2111425.svg"
@@ -44,7 +44,7 @@
                 :href="card.deployLink"
                 target="_blank"
                 title="Repository"
-                style="margin:auto 15px auto 15px"
+                style="margin:10px 15px 10px 15px"
                 ><img
                   height="32"
                   src="https://image.flaticon.com/icons/svg/1946/1946473.svg"
@@ -66,17 +66,17 @@ export default {
           imgSrc: require('../assets/drf.jpg'),
           title: 'VocalForLocal - Backend',
           description:
-            'Backend of VocalForLocal website, made with Django REST Framework.',
-          repoLink: '',
-          deployLink: ''
+            'Backend of VocalForLocal website, made with Django REST Framework and Swagger.',
+          repoLink: 'https://github.com/aishwary023/vfl-backend',
+          deployLink: 'https://backend-vfl.herokuapp.com/'
         },
         {
           imgSrc: require('../assets/vfl.png'),
           title: 'VocalForLocal - Frontend',
           description:
             'Created a website for local vendors who do not have the means to advertize themselves or even have their own shop. Made using vanilla JS and Bulma framework. Backend was made with Django REST API.. Made with Vanilla JS and Bulma CSS',
-          repoLink: '',
-          deployLink: ''
+          repoLink: 'https://github.com/aishwary023/vfl-frontend',
+          deployLink: 'https://vocalforlocal.netlify.app/'
         },
         {
           imgSrc: require('../assets/spotify.png'),
@@ -90,24 +90,24 @@ export default {
           imgSrc: 'https://picsum.photos/200/300',
           title: 'Portfolio',
           description: 'Portfolio website created with VueJS and Bootstrap.',
-          repoLink: '',
-          deployLink: ''
+          repoLink: 'https://github.com/aishwary023/spotify-search-recommend',
+          deployLink: 'https://spotify-recommendations.netlify.app/'
         },
         {
           imgSrc: require('../assets/vue.png'),
           title: 'VueYourWeather',
           description:
             'Simple weather app built in VueJS using OpenWeather.org API. My first Vue app.',
-          repoLink: '',
-          deployLink: ''
+          repoLink: 'https://github.com/aishwary023/vue-weather',
+          deployLink: 'https://vue-your-weather.netlify.app/'
         },
         {
           imgSrc: require('../assets/tictactoe.png'),
           title: 'TicTacToe',
           description:
             'Webapp to play tic-tac-toe game as multiplayer or with unbeatable bot implementing minimax algorithm.',
-          repoLink: '',
-          deployLink: ''
+          repoLink: 'https://github.com/aishwary023/tic-tac-toe',
+          deployLink: 'https://aishwary023.github.io/tic-tac-toe/'
         }
       ]
     };

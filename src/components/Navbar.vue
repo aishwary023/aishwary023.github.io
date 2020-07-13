@@ -3,12 +3,14 @@
     :class="{ change_color: scrollPosition > 50 }"
     class=" navbar fixed-top navbar-expand-lg "
   >
-    <a
-      :class="{ change_text_color: scrollPosition > 50 }"
-      class="navbar-brand"
-      href="#"
-      >AS</a
-    >
+    <a href="" class="navbar-brand">
+      <img
+        src="../assets/logo.png"
+        alt="Aishwary Saxena"
+        style="transform: scale(0.8)"
+      />
+    </a>
+
     <button
       class="navbar-toggler"
       type="button"
@@ -171,5 +173,8 @@ label {
   .change_text_color {
     color: #000000;
   }
+}
+.change_color {
+  border-bottom: 1px solid #e7eaec;
 }
 </style>
