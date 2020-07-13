@@ -14,12 +14,12 @@
           style="border-radius:50%"
           src="../assets/aishwary.png"
           alt="Aishwary Saxena"
-          height="150px"
-          width="150px"
+          height="200px"
+          width="200px"
         />
       </p>
       <br />
-      <p align="center">
+      <p align="center" style="font-size:16px">
         💬 student, self-taught coder<br />
         🌱 learning Django. REST. VueJS. Steganography. Cryptography<br />
         🔭 intrested in web-development, info-sec, anything tech <br />
@@ -34,7 +34,7 @@
           target="_blank"
           title="GitHub"
           ><img
-            height="28"
+            height="32"
             src="https://raw.githubusercontent.com/feathericons/feather/master/icons/github.svg"
         /></a>
         <a
@@ -43,7 +43,7 @@
           target="_blank"
           title="LinkedIn"
           ><img
-            height="28"
+            height="32"
             src="https://raw.githubusercontent.com/feathericons/feather/master/icons/linkedin.svg"
         /></a>
         <a
@@ -52,7 +52,7 @@
           target="_blank"
           title="Gmail"
           ><img
-            height="28"
+            height="32"
             src="https://raw.githubusercontent.com/feathericons/feather/master/icons/mail.svg"
         /></a>
         <a
@@ -61,7 +61,7 @@
           target="_blank"
           title="Whatsapp"
           ><img
-            height="28"
+            height="32"
             src="https://raw.githubusercontent.com/feathericons/feather/master/icons/message-circle.svg"
         /></a>
         <a
@@ -70,7 +70,7 @@
           target="_blank"
           title="Instagram"
           ><img
-            height="28"
+            height="32"
             src="https://raw.githubusercontent.com/feathericons/feather/master/icons/instagram.svg"
         /></a>
       </p>
