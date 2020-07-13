@@ -27,7 +27,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style >
 #landing-intro {
   position: absolute;
   top: 300px;
@@ -63,7 +63,11 @@ export default {
     opacity: 0.75;
     width: 350px !important;
   }
+  .glitch-wrapper > .glitch {
+    background: transparent !important;
+  }
 }
+
 .glitch-wrapper > .glitch {
   background: transparent !important;
 }
