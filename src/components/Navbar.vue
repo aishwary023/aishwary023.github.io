@@ -25,19 +25,12 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
-        <li
-          class="nav-item"
-          :class="{ active: isActive('home') }"
-          @click="setActive('home')"
-        >
+        <li class="nav-item" :class="{ active: scrollPosition < 380 }">
           <a
             :class="{ change_text_color: scrollPosition > 50 }"
             class="nav-link"
             href="#"
             id="home-btn"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            @click="toggle()"
             v-scroll-to="{
               el: '#home',
               offset: -115
@@ -47,17 +40,13 @@
         </li>
         <li
           class="nav-item"
-          :class="{ active: isActive('about') }"
-          @click="setActive('about')"
+          :class="{ active: scrollPosition > 340 && scrollPosition < 980 }"
         >
           <a
             :class="{ change_text_color: scrollPosition > 50 }"
             class="nav-link"
             href="#"
             id="about-btn"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            @click="toggle()"
             v-scroll-to="{
               el: '#about',
               offset: -115
@@ -65,19 +54,12 @@
             >About Me</a
           >
         </li>
-        <li
-          class="nav-item"
-          :class="{ active: isActive('projects') }"
-          @click="setActive('projects')"
-        >
+        <li class="nav-item" :class="{ active: scrollPosition > 940 }">
           <a
             :class="{ change_text_color: scrollPosition > 50 }"
             class="nav-link"
             href="#"
             id="projects-btn"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            @click="toggle()"
             v-scroll-to="{
               el: '#projects',
               offset: -115
@@ -153,7 +135,8 @@ label {
 
 @media (min-width: 768px) {
   .active > a {
-    border-top: 2px solid #ff0000;
+    transition: all 0.2s;
+    border-top: 4px solid #ff0000;
   }
 }
 @media (max-width: 768px) {
@@ -174,6 +157,7 @@ label {
     color: #000000 !important;
   }
   .active > a {
+    transition: all 0.2s;
     border-left: 4px solid #ff0000;
   }
 }
