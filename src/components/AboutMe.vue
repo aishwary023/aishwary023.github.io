@@ -35,10 +35,7 @@
         target="_blank"
         title="GitHub"
       >
-        <img
-          height="32"
-          src="https://raw.githubusercontent.com/feathericons/feather/master/icons/github.svg"
-        />
+        <img height="32" src="../assets/github.svg" />
       </a>
       <a
         class="contact-icon"
@@ -46,10 +43,7 @@
         target="_blank"
         title="LinkedIn"
       >
-        <img
-          height="32"
-          src="https://raw.githubusercontent.com/feathericons/feather/master/icons/linkedin.svg"
-        />
+        <img height="32" src="../assets/linkedin.svg" />
       </a>
       <a
         class="contact-icon"
@@ -57,16 +51,10 @@
         target="_blank"
         title="Gmail"
       >
-        <img
-          height="32"
-          src="https://raw.githubusercontent.com/feathericons/feather/master/icons/mail.svg"
-        />
+        <img height="32" src="../assets/mail.svg" />
       </a>
       <a class="contact-icon" href="https://wa.me/918299329212" target="_blank" title="Whatsapp">
-        <img
-          height="32"
-          src="https://raw.githubusercontent.com/feathericons/feather/master/icons/message-circle.svg"
-        />
+        <img height="32" src="../assets/message.svg" />
       </a>
       <a
         class="contact-icon"
@@ -74,10 +62,7 @@
         target="_blank"
         title="Instagram"
       >
-        <img
-          height="32"
-          src="https://raw.githubusercontent.com/feathericons/feather/master/icons/instagram.svg"
-        />
+        <img height="32" src="../assets/instagram.svg" />
       </a>
     </p>
   </body>

@@ -1,9 +1,7 @@
 <template>
   <div class="container" id="projects">
     <span>
-      <h3>
-        Projects
-      </h3>
+      <h3>Projects</h3>
     </span>
     <hr />
 
@@ -16,18 +14,11 @@
         <div class="card">
           <div class="card-body text-center d-flex flex-column">
             <p>
-              <img
-                :src="card.imgSrc"
-                style="border-radius:50%;"
-                height="150px"
-                width="150px"
-              />
+              <img :src="card.imgSrc" style="border-radius:50%;" height="150px" width="150px" />
             </p>
             <h4 class="card-title">{{ card.title }}</h4>
             <hr />
-            <p class="card-text">
-              {{ card.description }}
-            </p>
+            <p class="card-text">{{ card.description }}</p>
             <span class="mt-auto">
               <a
                 class="github-icon"
@@ -35,20 +26,18 @@
                 target="_blank"
                 title="Repository"
                 style="margin:10px 15px 10px 15px"
-                ><img
-                  height="40"
-                  src="https://image.flaticon.com/icons/svg/2111/2111425.svg"
-              /></a>
+              >
+                <img height="40" src="../assets/github.svg" />
+              </a>
               <a
-                class="github-icon "
+                class="github-icon"
                 :href="card.deployLink"
                 target="_blank"
                 title="Repository"
                 style="margin:10px 15px 10px 15px"
-                ><img
-                  height="32"
-                  src="https://image.flaticon.com/icons/svg/1946/1946473.svg"
-              /></a>
+              >
+                <img height="32" src="../assets/link.svg" />
+              </a>
             </span>
           </div>
         </div>
@@ -83,15 +72,15 @@ export default {
           title: 'Spotify Search Recommendations',
           description:
             'Created a website with Bootstrap and vanilla JS, to recommend Playlists/Albums along with search functionality AJAX with Spotify API. Made using HTML, CSS, JavaScript and Bootstrap@4.4.1',
-          repoLink: '',
-          deployLink: ''
+          repoLink: 'https://github.com/aishwary023/spotify-search-recommend',
+          deployLink: 'https://spotify-recommendations.netlify.app/'
         },
         {
           imgSrc: 'https://picsum.photos/200/300',
           title: 'Portfolio',
           description: 'Portfolio website created with VueJS and Bootstrap.',
-          repoLink: 'https://github.com/aishwary023/spotify-search-recommend',
-          deployLink: 'https://spotify-recommendations.netlify.app/'
+          repoLink: 'https://github.com/aishwary023/aishwary023.github.io',
+          deployLink: 'https://aishwary023.github.io/'
         },
         {
           imgSrc: require('../assets/vue.png'),
