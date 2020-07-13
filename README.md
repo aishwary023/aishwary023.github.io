@@ -1,5 +1,7 @@
 # Portfolio-Website
 
+My personal portfolio website made using VueJS and Bootstrap.
+
 ## Project setup
 ```
 npm install
