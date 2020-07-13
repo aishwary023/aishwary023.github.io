@@ -1,12 +1,10 @@
 <template>
-  <nav
-    :class="{ change_color: scrollPosition > 50 }"
-    class=" navbar fixed-top navbar-expand-lg "
-  >
-    <a href="" class="navbar-brand">
+  <nav :class="{ change_color: scrollPosition > 50 }" class="navbar fixed-top navbar-expand-lg">
+    <a href class="navbar-brand">
       <img
         src="../assets/logo.png"
         alt="Aishwary Saxena"
+        id="brand-icon"
         style="transform: scale(0.8)"
       />
     </a>
@@ -37,13 +35,9 @@
               el: '#home',
               offset: -115
             }"
-            >Home</a
-          >
+          >Home</a>
         </li>
-        <li
-          class="nav-item"
-          :class="{ active: scrollPosition > 340 && scrollPosition < 980 }"
-        >
+        <li class="nav-item" :class="{ active: scrollPosition > 340 && scrollPosition < 980 }">
           <a
             :class="{ change_text_color: scrollPosition > 50 }"
             class="nav-link"
@@ -53,8 +47,7 @@
               el: '#about',
               offset: -115
             }"
-            >About Me</a
-          >
+          >About Me</a>
         </li>
         <li class="nav-item" :class="{ active: scrollPosition > 940 }">
           <a
@@ -66,8 +59,7 @@
               el: '#projects',
               offset: -115
             }"
-            >Projects</a
-          >
+          >Projects</a>
         </li>
         <li class="nav-item">
           <a
@@ -75,8 +67,7 @@
             class="nav-link btn btn-outline-dark"
             href="https://drive.google.com/file/d/1i-IjETYsAf6Ex6STP1jxfB4Ft2QVYZPW/view?usp=sharing"
             target="_blank"
-            >Resume</a
-          >
+          >Resume</a>
         </li>
       </ul>
     </div>
@@ -154,8 +145,13 @@ a:hover {
     border-radius: 0;
     background-color: #ffffff;
     border-color: #ffffff;
+    padding: 0;
   }
-
+  #brand-icon {
+    transform: scale(1);
+    width: 173.6px;
+    height: 71.2px;
+  }
   #hamburger,
   a {
     color: #000000;
