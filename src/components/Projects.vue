@@ -55,7 +55,7 @@ export default {
           imgSrc: require('../assets/drf.jpg'),
           title: 'VocalForLocal - Backend',
           description:
-            'Backend of VocalForLocal website, made with Django REST Framework and Swagger.',
+            'Backend of VocalForLocal website, made with Django REST Framework and Swagger supported by Postgresql.',
           repoLink: 'https://github.com/aishwary023/vfl-backend',
           deployLink: 'https://backend-vfl.herokuapp.com/'
         },
