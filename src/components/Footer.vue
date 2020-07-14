@@ -5,7 +5,7 @@
     <a href="http://github.com/aishwary023" style="color:#ffffff"
       ><strong>aishwary023</strong></a
     >
-    <br />
+    <hr style="color:#000000" class="container" />
     To use this template as your website, go to this
     <a
       href="http://github.com/aishwary023/aishwary023.github.io.get"
