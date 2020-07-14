@@ -1,19 +1,22 @@
 <template>
   <div class="footer" height="100px">
-    <br />
-    Made with ❤️ by
-    <a href="http://github.com/aishwary023" style="color:#ffffff"
-      ><strong>aishwary023</strong></a
-    >
-    <hr style="color:#000000" class="container" />
-    To use this template as your website, go to this
-    <a
-      href="http://github.com/aishwary023/aishwary023.github.io.get"
-      style="color:#ffffff"
-      ><strong>repo</strong></a
-    >, download the source code and change relevant information!
-    <br />
-    <br />
+    <div class="container">
+      <br />
+      Made with ❤️ by
+      <a href="http://github.com/aishwary023" style="color:#ffffff"
+        ><strong>aishwary023</strong></a
+      >
+      <br />
+      <hr />
+      To use this template as your website, go to this
+      <a
+        href="http://github.com/aishwary023/aishwary023.github.io.get"
+        style="color:#ffffff"
+        ><strong>repo</strong></a
+      >, download the source code and change relevant information!
+      <br />
+      <br />
+    </div>
   </div>
 </template>
 
