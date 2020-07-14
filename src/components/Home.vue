@@ -2,8 +2,8 @@
   <div id="home">
     <Navbar />
     <div id="landing-intro">
-      <div text="Hi,">Hi,</div>
-      <div id="my-name" text="I'm Aishwary">I'm Aishwary</div>
+      <div text="Hi,">Hi, I'm</div>
+      <div id="my-name" text="I'm Aishwary">Aishwary</div>
       <div id="sub-intro">
         <glitch text="Student | Developer | Tech Enthusiast"></glitch>
       </div>
@@ -37,7 +37,6 @@ export default {
   font-weight: 500;
   font-family: 'Futura', monospace;
   text-transform: uppercase;
-  text-shadow: 1px 1px #f00;
 }
 #sub-intro {
   font-size: 20px;
@@ -46,10 +45,12 @@ export default {
 }
 #my-name {
   font-size: 5rem;
+  font-weight: 900;
 }
 @media (max-width: 768px) {
   #my-name {
     font-size: 3.6rem;
+    font-weight: 900;
   }
   #landing-intro {
     position: absolute;
@@ -61,7 +62,6 @@ export default {
     font-weight: 400;
     font-family: 'Futura', monospace;
     text-transform: uppercase;
-    text-shadow: 1px 1px #f00;
   }
   #sub-intro {
     font-size: 18px;
