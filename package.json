@@ -9,13 +9,17 @@
     "deploy": "node deploy-script.js"
   },
   "dependencies": {
+    "bootstrap": "^4.5.0",
     "core-js": "^3.6.5",
+    "jquery": "^3.5.1",
     "particles.js": "^2.0.0",
+    "popper.js": "^1.16.1",
     "prerender-spa-plugin": "^3.4.0",
     "vue": "^2.6.11",
     "vue-flipper": "^1.0.0",
     "vue-glitch": "^1.0.1",
     "vue-gtag": "^1.7.0",
+    "vue-loading-overlay": "^3.3.2",
     "vue-scrollto": "^2.18.1"
   },
   "devDependencies": {
