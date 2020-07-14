@@ -7,9 +7,10 @@ My personal portfolio website made using VueJS and Bootstrap.
 Follow the below mentioned steps to configure the code accordingly!
 
 ## Project Setup
+🔴IMPORTANT🔴
+> After cloning the repository, please remove ```/public/sitemap.xml```, in ```main.js``` remove VueGtag configuration and ID, as these both file help in analytics of my deployed website. You can add your own google analytics by visiting [here](https://analytics.google.com/)
 
-After cloning the repository, install all dependencies by running:
-
+After that, install dependencies using:
 ```
 npm install
 ```
