@@ -17,6 +17,7 @@
     "prerender-spa-plugin": "^3.4.0",
     "vue": "^2.6.11",
     "vue-flipper": "^1.0.0",
+    "vue-fullpage.js": "^0.1.5",
     "vue-glitch": "^1.0.1",
     "vue-gtag": "^1.7.0",
     "vue-loading-overlay": "^3.3.2",
@@ -29,8 +30,9 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11",
-    "execa": "latest"
+    "execa": "latest",
+    "file-loader": "^6.0.0",
+    "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
     "root": true,

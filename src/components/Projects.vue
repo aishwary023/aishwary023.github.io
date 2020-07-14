@@ -14,7 +14,12 @@
         <div class="card">
           <div class="card-body text-center d-flex flex-column">
             <p>
-              <img :src="card.imgSrc" style="border-radius:50%;" height="150px" width="150px" />
+              <img
+                :src="card.imgSrc"
+                style="border-radius:50%;"
+                height="150px"
+                width="150px"
+              />
             </p>
             <h4 class="card-title">{{ card.title }}</h4>
             <hr />
@@ -126,5 +131,11 @@ hr {
   width: 96%;
   background-color: #ff0000;
   height: 1px;
+}
+.card-title {
+  font-family: 'Futura';
+}
+.card-text {
+  text-align: justify;
 }
 </style>

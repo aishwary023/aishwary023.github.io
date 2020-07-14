@@ -2,14 +2,15 @@
   <div id="home">
     <Navbar />
     <div id="landing-intro">
-      <glitch text="Hi,"></glitch>
-      <glitch text="I'm Aishwary"></glitch>
+      <div text="Hi,">Hi,</div>
+      <div id="my-name" text="I'm Aishwary">I'm Aishwary</div>
       <div id="sub-intro">
         <glitch text="Student | Developer | Tech Enthusiast"></glitch>
       </div>
+
+      <span style="font-size:1.5rem">Welcome to my website!</span>
     </div>
     <ParticlesJS />
-    <br />
   </div>
 </template>
 
@@ -25,36 +26,42 @@ export default {
   }
 };
 </script>
-
-<style >
+<style scoped>
 #landing-intro {
   position: absolute;
-  top: 300px;
+  top: 50vh;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #ffffff;
   font-size: 3rem;
   font-weight: 500;
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Futura', monospace;
   text-transform: uppercase;
+  text-shadow: 1px 1px #f00;
 }
 #sub-intro {
   font-size: 20px;
   font-weight: 100;
   opacity: 0.75;
 }
-
+#my-name {
+  font-size: 5rem;
+}
 @media (max-width: 768px) {
+  #my-name {
+    font-size: 2.8rem;
+  }
   #landing-intro {
     position: absolute;
-    top: 300px;
+    top: 50vh;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #ffffff;
     font-size: 2rem;
     font-weight: 400;
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Futura', monospace;
     text-transform: uppercase;
+    text-shadow: 1px 1px #f00;
   }
   #sub-intro {
     font-size: 15px;

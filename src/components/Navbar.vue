@@ -45,7 +45,7 @@
             id="about-btn"
             v-scroll-to="{
               el: '#about',
-              offset: -115
+              offset: -125
             }"
           >About Me</a>
         </li>
@@ -57,7 +57,7 @@
             id="projects-btn"
             v-scroll-to="{
               el: '#projects',
-              offset: -115
+              offset: -125
             }"
           >Projects</a>
         </li>

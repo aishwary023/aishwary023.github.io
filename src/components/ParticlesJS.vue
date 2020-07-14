@@ -1,5 +1,5 @@
 <template>
-  <div id="particles-js" style="height:600px"></div>
+  <div id="particles-js" style="height:100vh;"></div>
 </template>
 
 <script>
@@ -22,7 +22,7 @@ export default {
             value: 60,
             density: {
               enable: true,
-              value_area: 1000
+              value_area: 800
             }
           },
           color: {
@@ -31,7 +31,7 @@ export default {
           shape: {
             type: 'circle',
             stroke: {
-              width: 3,
+              width: 0,
               color: '#000000'
             },
             polygon: {
@@ -42,37 +42,37 @@ export default {
             value: 1,
             random: false,
             anim: {
-              enable: false,
+              enable: true,
               speed: 1,
               opacity_min: 0.1,
               sync: false
             }
           },
           size: {
-            value: 3,
+            value: 4,
             random: true,
             anim: {
               enable: false,
-              speed: 60,
+              speed: 40,
               size_min: 0.1,
               sync: false
             }
           },
           line_linked: {
             enable: true,
-            distance: 200,
+            distance: 150,
             color: '#ffffff',
-            opacity: 0.5,
+            opacity: 0.4,
             width: 1
           },
           move: {
             enable: true,
-            speed: 6,
+            speed: 8,
             direction: 'none',
-            random: true,
+            random: false,
             straight: false,
             out_mode: 'out',
-            bounce: true,
+            bounce: false,
             attract: {
               enable: false,
               rotateX: 600,
@@ -81,7 +81,7 @@ export default {
           }
         },
         interactivity: {
-          detect_on: 'canvas',
+          detect_on: 'window',
           events: {
             onhover: {
               enable: true,
@@ -95,7 +95,7 @@ export default {
           },
           modes: {
             grab: {
-              distance: 140,
+              distance: 400,
               line_linked: {
                 opacity: 1
               }
@@ -108,8 +108,8 @@ export default {
               speed: 3
             },
             repulse: {
-              distance: 150,
-              duration: 1
+              distance: 200,
+              duration: 0.4
             },
             push: {
               particles_nb: 4

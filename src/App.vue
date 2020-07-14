@@ -66,6 +66,15 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: 'Futura';
+  src: local('Futura'), url(./fonts/Futura.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Audrey-Normal';
+  src: local('Audrey-Normal'), url(./fonts/Audrey-Normal.otf) format('opentype');
+}
 #app {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
