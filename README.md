@@ -35,6 +35,8 @@ npm run build
 ```
 npm run lint
 ```
+<hr>
+<br>
 
 Now the default website must be running, to customize it:
 
@@ -50,4 +52,8 @@ Edit these files to add your social media links, and projects. If you want to re
 
 Add images in `/src/assets` and fonts in `/src/fonts`. Import your font by going to `App.vue` and changing the import statement in `<script></script>`.
 
+#### 4. Edit Footer.
+Edit ```/src/components/Footer.vue``` according to your preference, it would be awesome if you could give me mention :P
+
+<br>
 For any other problem, feel free to raise an issue or contact me on the given details. Also, if you find any bugs or improvement please create a Pull Request to the `develop` branch.
