@@ -13,6 +13,7 @@
     "particles.js": "^2.0.0",
     "prerender-spa-plugin": "^3.4.0",
     "vue": "^2.6.11",
+    "vue-analytics": "^5.22.1",
     "vue-flipper": "^1.0.0",
     "vue-glitch": "^1.0.1",
     "vue-scrollto": "^2.18.1"

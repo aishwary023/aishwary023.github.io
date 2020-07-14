@@ -1,5 +1,9 @@
 import Vue from 'vue';
 import App from './App.vue';
+import VueAnalytics from 'vue-analytics';
+Vue.use(VueAnalytics, {
+  id: 'UA-172619189-1'
+});
 
 Vue.config.productionTip = false;
 
