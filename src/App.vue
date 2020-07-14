@@ -9,7 +9,6 @@
       :height="100"
       :width="100"
       :opacity="0.1"
-      :z-index="9999"
       :loader="'dots'"
     ></loading>
     <div>
@@ -19,9 +18,10 @@
       <transition name="fade">
         <AboutMe v-if="about" />
       </transition>
-      <transition name="fade">
-        <Projects v-if="about" />
-      </transition>
+
+      <Projects v-if="about" />
+
+      <Footer v-if="about"></Footer>
     </div>
   </div>
 </template>
@@ -29,7 +29,8 @@
 <script>
 import Home from './components/Home.vue';
 import AboutMe from './components/AboutMe.vue';
-import Projects from './components/Projects';
+import Projects from './components/Projects.vue';
+import Footer from './components/Footer.vue';
 
 import Loading from 'vue-loading-overlay';
 
@@ -48,7 +49,8 @@ export default {
     Home,
     AboutMe,
     Projects,
-    Loading
+    Loading,
+    Footer
   },
   mounted: function() {
     let vm = this;

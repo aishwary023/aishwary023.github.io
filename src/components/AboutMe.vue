@@ -34,7 +34,7 @@
       <p align="center">
         <a
           class="contact-icon"
-          href="https://www.github.com/aishwary023/"
+          :href="socialLinks.github"
           target="_blank"
           title="GitHub"
         >
@@ -42,7 +42,7 @@
         </a>
         <a
           class="contact-icon"
-          href="https://www.linkedin.com/in/aishwary-saxena/"
+          :href="socialLinks.linkedin"
           target="_blank"
           title="LinkedIn"
         >
@@ -50,7 +50,7 @@
         </a>
         <a
           class="contact-icon"
-          href="mailto:aishwary.saxena.min19@itbhu.ac.in"
+          :href="socialLinks.mail"
           target="_blank"
           title="Gmail"
         >
@@ -58,7 +58,7 @@
         </a>
         <a
           class="contact-icon"
-          href="https://wa.me/918299329212"
+          :href="socialLinks.whatsapp"
           target="_blank"
           title="Whatsapp"
         >
@@ -66,7 +66,7 @@
         </a>
         <a
           class="contact-icon"
-          href="https://www.instagram.com/ai.shwary/"
+          :href="socialLinks.instagram"
           target="_blank"
           title="Instagram"
         >
@@ -78,7 +78,14 @@
 </template>
 
 <script>
-export default {};
+import json from '../json-data/social.json';
+export default {
+  data: () => {
+    return {
+      socialLinks: json
+    };
+  }
+};
 </script>
 
 <style>

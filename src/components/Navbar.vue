@@ -181,7 +181,7 @@ a:hover {
     padding-top: 0;
     padding-bottom: 5px;
     border-radius: 0;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.8);
     border-color: #000000;
     padding: 0;
   }
