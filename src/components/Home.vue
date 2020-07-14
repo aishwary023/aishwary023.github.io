@@ -49,7 +49,7 @@ export default {
 }
 @media (max-width: 768px) {
   #my-name {
-    font-size: 2.8rem;
+    font-size: 3.6rem;
   }
   #landing-intro {
     position: absolute;
@@ -57,14 +57,14 @@ export default {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #ffffff;
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: 400;
     font-family: 'Futura', monospace;
     text-transform: uppercase;
     text-shadow: 1px 1px #f00;
   }
   #sub-intro {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 100;
     opacity: 0.75;
     width: 350px !important;
