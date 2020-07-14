@@ -44,12 +44,12 @@ export default {
   opacity: 0.75;
 }
 #my-name {
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: 900;
 }
 @media (max-width: 768px) {
   #my-name {
-    font-size: 3.6rem;
+    font-size: 4.5rem;
     font-weight: 900;
   }
   #landing-intro {
