@@ -10,7 +10,7 @@
       <hr />
       To use this template as your website, go to this
       <a
-        href="http://github.com/aishwary023/aishwary023.github.io.get"
+        href="http://github.com/aishwary023/aishwary023.github.io"
         style="color:#ffffff"
         ><strong>repo</strong></a
       >, download the source code and change relevant information!
