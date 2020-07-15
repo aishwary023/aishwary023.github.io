@@ -28,8 +28,7 @@
         class="material-icons"
         :class="{ change_text_color: scrollPosition > 50 }"
         id="hamburger"
-        >{{ icon }}</i
-      >
+      >{{ icon }}</i>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -50,13 +49,9 @@
               el: '#home',
               offset: -115
             }"
-            >Home</a
-          >
+          >Home</a>
         </li>
-        <li
-          class="nav-item"
-          :class="{ active: scrollPosition > 340 && scrollPosition < 980 }"
-        >
+        <li class="nav-item" :class="{ active: scrollPosition > 340 && scrollPosition < 980 }">
           <a
             :class="{ change_text_color: scrollPosition > 50 }"
             class="nav-link"
@@ -72,10 +67,9 @@
               el: '#about',
               offset: -125
             }"
-            >About Me</a
-          >
+          >About Me</a>
         </li>
-        <li class="nav-item" :class="{ active: scrollPosition > 940 }">
+        <li class="nav-item" :class="{ active: scrollPosition > 940 }" style="margin-right:10px">
           <a
             :class="{ change_text_color: scrollPosition > 50 }"
             class="nav-link"
@@ -91,19 +85,34 @@
               el: '#projects',
               offset: -125
             }"
-            >Projects</a
-          >
+          >Projects</a>
         </li>
-        <li class="nav-item">
-          <a
-            id="resume"
-            class="nav-link btn btn-outline-dark"
-            :class="{ change_resume_text_color: scrollPosition > 50 }"
-            href="https://drive.google.com/file/d/1i-IjETYsAf6Ex6STP1jxfB4Ft2QVYZPW/view?usp=sharing"
-            target="_blank"
-            >Resume</a
-          >
-        </li>
+
+        <div class="row">
+          <div class="col-6">
+            <li class="nav-item" style="margin:10px 0">
+              <a
+                id="dev_cv"
+                class="nav-link btn btn-light"
+                :class="{ change_dev_cv_text_color: scrollPosition > 50 }"
+                href="https://aishwary023.github.io/assets/dev_cv_aishwary.png"
+                target="_blank"
+                style="text-transform:none"
+              >&lt;DevCv/&gt;</a>
+            </li>
+          </div>
+          <div class="col-6">
+            <li style="margin:10px 0" class="nav-item">
+              <a
+                id="resume"
+                class="nav-link btn btn-outline-dark"
+                :class="{ change_resume_text_color: scrollPosition > 50 }"
+                href="https://drive.google.com/file/d/1i-IjETYsAf6Ex6STP1jxfB4Ft2QVYZPW/view?usp=sharing"
+                target="_blank"
+              >Resume</a>
+            </li>
+          </div>
+        </div>
       </ul>
     </div>
   </nav>
@@ -121,6 +130,18 @@ export default {
   methods: {
     toggle() {
       this.icon = this.icon === 'menu' ? 'close' : 'menu';
+
+      if (
+        document
+          .getElementById('navigation-bar')
+          .classList.contains('border-btm')
+      ) {
+        document
+          .getElementById('navigation-bar')
+          .classList.remove('border-btm');
+      } else {
+        document.getElementById('navigation-bar').classList.add('border-btm');
+      }
     },
     updateScroll() {
       this.scrollPosition = window.scrollY;
@@ -145,6 +166,9 @@ export default {
 a {
   color: #ffffff;
 }
+.border-btm {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
 .nav-link {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   letter-spacing: 1px;
@@ -166,7 +190,13 @@ a:hover {
   color: #ffffff;
   background-color: #343a40 !important;
 }
-
+#dev_cv {
+  color: #000000;
+}
+.change_dev_cv_text_color {
+  background-color: #ffffff !important;
+  border-color: #000000;
+}
 @media (min-width: 768px) {
   .active > a {
     transition: all 0.2s;
@@ -176,6 +206,11 @@ a:hover {
 @media (max-width: 768px) {
   .change_resume_text_color {
     color: #000000 !important;
+  }
+  .change_dev_cv_text_color {
+    color: #ffffff !important;
+    background-color: #000000 !important;
+    border-color: #000000;
   }
   nav {
     padding-top: 0;
@@ -194,9 +229,15 @@ a:hover {
   a {
     color: #ffffff;
   }
+
   #resume {
     background-color: transparent !important;
     color: #ffffff;
+    border-color: #000000;
+    margin-right: 10px;
+  }
+  #dev_cv {
+    margin-left: 10px;
   }
   .active > a {
     transition: all 0.2s;
