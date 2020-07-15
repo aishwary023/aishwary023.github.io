@@ -7,9 +7,10 @@ My personal portfolio website made using VueJS and Bootstrap.
 Follow the below mentioned steps to configure the code accordingly!
 
 ## Project Setup
+🔴IMPORTANT🔴
+> After cloning the repository, please remove ```/public/sitemap.xml```, in ```main.js``` remove VueGtag configuration and ID, as these both file help in analytics of my deployed website. You can add your own google analytics by visiting [here](https://analytics.google.com/)
 
-After cloning the repository, install all dependencies by running:
-
+After that, install dependencies using:
 ```
 npm install
 ```
@@ -34,6 +35,8 @@ npm run build
 ```
 npm run lint
 ```
+<hr>
+<br>
 
 Now the default website must be running, to customize it:
 
@@ -49,4 +52,8 @@ Edit these files to add your social media links, and projects. If you want to re
 
 Add images in `/src/assets` and fonts in `/src/fonts`. Import your font by going to `App.vue` and changing the import statement in `<script></script>`.
 
+#### 4. Edit Footer.
+Edit ```/src/components/Footer.vue``` according to your preference, it would be awesome if you could give me mention :P
+
+<br>
 For any other problem, feel free to raise an issue or contact me on the given details. Also, if you find any bugs or improvement please create a Pull Request to the `develop` branch.
