@@ -7,7 +7,6 @@
       <div id="sub-intro">
         <glitch text="Student | Developer | Tech Enthusiast"></glitch>
       </div>
-
       <span style="font-size:1.5rem">Welcome to my website!</span>
     </div>
     <ParticlesJS />

@@ -12,7 +12,7 @@
       <a
         href="http://github.com/aishwary023/aishwary023.github.io"
         style="color:#ffffff"
-        ><strong>repo</strong></a
+        ><strong>repository</strong></a
       >, download the source code and change relevant information!
       <br />
       <br />
