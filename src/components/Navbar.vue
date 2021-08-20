@@ -90,18 +90,6 @@
 
         <div class="row">
           <div class="col-6">
-            <li class="nav-item" style="margin:10px 0">
-              <a
-                id="dev_cv"
-                class="nav-link btn btn-light"
-                :class="{ change_dev_cv_text_color: scrollPosition > 50 }"
-                href="https://aishwary023.github.io/assets/dev_cv_aishwary.png"
-                target="_blank"
-                style="text-transform:none"
-              >&lt;DevCv/&gt;</a>
-            </li>
-          </div>
-          <div class="col-6">
             <li style="margin:10px 0" class="nav-item">
               <a
                 id="resume"
