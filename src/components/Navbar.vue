@@ -89,7 +89,7 @@
         </li>
 
         <div class="row">
-          <div class="col-6">
+          <div class="col-12">
             <li style="margin:10px 0" class="nav-item">
               <a
                 id="resume"
