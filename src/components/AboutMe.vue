@@ -21,10 +21,8 @@
       <p align="center" id="readme-md">
         💬 student, self-taught coder
         <br />📙 studies at Indian Institute of Technology, BHU, Varanasi
-        <br />🌱 learning Django. REST. TypeScript. VueJS.
         <br />🔭 intrested in web-development, open-source, info-sec, anything tech <br />🖥
-        develops webapps. back-end works. <br />🧩 likes painting. cycling.
-        dancing. and obviously coding
+        develops webapps. back-end works. <br />🧩 likes painting. cycling. and obviously coding
         <br />
       </p>
       <p>
